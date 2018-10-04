@@ -2,10 +2,26 @@ body {
 	background-color: 
 	font-size: 16;
 }
+h2 {
+	color: #00000;
+	font-family: courier new;
+	font-weight: lighter;
+	margin-left: 90px;
+	text-align: left;
+}
+h3 {
+	color: #00000;
+	font-family: courier new;
+	font-weight: lighter;
+	margin-left: 90px;
+	text-align: left;
+}
 
 p {
 	color: #a29d9d;
 	font-family: courier new;
+	margin-left: 90px;
+	text-align: left;
 }
 hr {
 	display:block;
@@ -15,3 +31,11 @@ hr {
 	margin: 5em 0;
 	padding: 0;
 }
+img {
+	height: 650px;
+	width: 1150px;
+}
+.contain {
+	object-fit: fill;
+}
+
