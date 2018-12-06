@@ -1,0 +1,156 @@
+/*Style.CSS*/
+
+body, #slider, .wrap, .slide-content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	color: #00000;
+}
+
+.h1 {
+	font-family: bodoni;
+	text-align: center;
+}
+
+.wrap{position:relative}
+
+.slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide1{background-image: url(images/11.14.18_SCAN8.jpg)}
+.slide2{background-image: url(images/11.8.18_SCAN6.jpg)}
+.slide3{background-image: url(images/11.8.18_SCAN2.jpg)}
+
+.slide-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.slide-content span{
+	font-size: 5rem;
+	color: white;
+}
+
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left{
+	border-width: 30px 40px 30px 0;
+	border-color: transparent white transparent transparent;
+	left: 0;
+	margin-left: 30px;
+}
+
+#arrow-right{
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent white;
+	right: 0;
+	margin-right: 30px;
+}
+
+.h2 {
+	font-family: bodoni;
+	text-align: center;
+}
+
+.h4 {
+	font-family: Times New Roman;
+	text-align: center;
+	font-weight: lighter;
+	font-style: italic;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.h3 {
+	font-family: bodoni;
+	text-align: center;
+}
+
+.p1 {
+	font-family: times new roman;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 150px;
+	margin-right: 110px;
+}
+.p2 {
+	font-family: times new roman;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 150px;
+	margin-right: 110px;
+}
+
+.img1 {
+	width: 300px;
+	height: 400px;
+	display: block;
+	margin-left: 475px;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.img2 {
+	width: 300px;
+	height: 400px;
+	display: block;
+	margin-left: 150px;
+	margin-right: auto;
+	margin-top: -400px;
+	clear: both;
+
+}
+
+.img3 {
+	width: 300px;
+	height: 400px;
+	display: block;
+	margin-left: 800px;
+	margin-right: auto;
+	margin-top: -400px;
+}
+
+.p3 {
+	font-family: times new roman;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 150px;
+	margin-right: 110px;
+}
+
+.hr {
+	margin-left: 150px;
+	margin-right: 110px; 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.p4 {
+	font-family: times new roman;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 10px;
+}

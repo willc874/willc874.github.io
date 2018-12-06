@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport">
+		<content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible"
+		content="ie=edge">
+
+		<title>Photo Essay | Caroline Willis</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		
+	</head>
+
+	<body>
+		<h1 class="h1">C A R O L I N E &nbsp; W I L L I S</h1>
+		<br>
+
+		<div class="wrap">
+			<div id="arrow-left" class="arrow"></div>
+			<div id="slider">
+				<div class="slide slide1">
+					<div class="slide-content">
+					</div>
+				</div>
+				<div class="slide slide2">
+					<div class="slide-content">	
+					</div>
+				</div>
+				<div class="slide slide3">
+					<div class="slide-content">
+					</div>
+				</div>
+			</div>
+			<div id="arrow-right" class="arrow"></div>
+
+
+			<script>
+				let sliderImages = document.querySelectorAll('.slide'),
+					arrowLeft = document.querySelector('#arrow-left'),
+					arrowRight = document.querySelector('#arrow-right'),
+					current = 0;
+
+				//Clears All Images
+				function reset(){
+					for(let i = 0; i < sliderImages.length; i++){
+						sliderImages[i].style.display = 'none';
+					}
+				}
+
+				//Starts Slideshow
+				function startSlide(){
+					reset();
+					sliderImages[0].style.display = 'block';
+				}
+
+				//Sliding Left
+				function slideLeft(){
+					reset();
+					sliderImages[current - 1].style.display = 'block';
+					current--;
+				}
+
+				//Sliding Right
+				function slideRight(){
+					reset();
+					sliderImages[current + 1].style.display = 'block';
+					current++;
+				}
+
+				//Left Arrow Click
+				arrowLeft.addEventListener('click', function(){
+					if(current === 0){
+						current = sliderImages.length;
+					}
+					slideLeft();
+				});
+
+				//Right Arrow Click
+				arrowRight.addEventListener('click', function(){
+					if(current === sliderImages.length - 1){
+						current = -1;
+					}
+					slideRight();
+				});
+
+				startSlide();
+
+			</script>	
+
+
+
+		<h2 class="h2">T h e &nbsp;&nbsp;W o m e n&nbsp;&nbsp; o f&nbsp;&nbsp; L a&nbsp;&nbsp; P a r a d a</h2>
+		<h4 class="h4">A  documentary photo essay captured in medium format black and white film of the women day workers who gather at the corner of Marcy and Division Avenues, otherwise known as La Parada, in South Williamsburg to be picked up for a cleaning job by members of the Hasidic community.</h4>
+		<h3 class="h3">December 6, 2018</h3>
+
+		<p class="p1">“One early October morning, a few dozen women are huddling at the windswept corner of Marcy Avenue and Division Avenue, above the expressway that connects Brooklyn with nearby Queens. It’s a bright sunny day, but the cold soon seeps into one’s bones. As hundreds of cars whiz by below, the women try to warm themselves, but to no avail. There are no benches, shelters, heaters, cafes or toilets at this corner – a bustling urban intersection that’s been dubbed “La Parada” (Spanish for “The Stop”), and has drawn unflattering comparisons to the notorious American slave markets of one and a half centuries ago, which were long supposed to be nonexistent." </p>
+
+		<p class="p2">“It’s the day after Rosh Hashanah and about 50 women arrive at La Parada between 6 and 8 A.M. Almost all are migrants from Latin America, principally Mexico and Ecuador. Not far away is a group of five workers from Poland and Russia. Women come here every day in the hope of finding cleaning jobs in the Satmar community, a Hasidic sect that was founded in 1905 by Rabbi Yoel Teitelbaum in the Transylvanian city of Satmar. After World War II, the community’s center moved to Brooklyn’s Williamsburg section. According to estimates from the past decade, more than 40,000 members of the ultra-Orthodox sect currently live in Brooklyn." </p>
+
+		<img class="img1" src="images/11.14.18_SCAN1.jpg" alt="Scan 1">
+		<img class="img2" src="images/11.14.18_SCAN11.jpg" alt="Scan 11">
+		<img class="img3" src="images/11.14.18_SCAN14.jpg" alt="Scan 14">
+
+		<p class="p3">“From the outside, the cultural encounter between the Latinas and their prospective Hasidic employers looks like a scene from a theater play. A woman with a head-covering pushing a baby carriage approaches briskly. Within seconds, seven women gather around her. Their conversations are a jumble of broken languages: Spanish, Portuguese, Russian, Yiddish and also – how could it be otherwise? – English. “Doce,” one shouts in Spanish, meaning 12, the minimum hourly wage that most workers demand for house cleaning. But the Satmar woman raises both hands, showing five fingers on one, four on the other: She’s willing to pay $9 (the minimum wage in New York State). After a few minutes of bargaining, a Mexican woman in sweatpants and black sneakers starts to follow her new employer. The two soon disappear around the corner as the other women turn away." </p>
+
+
+		<hr class="hr">
+
+		<p class="p4">Photographs by <a target="_blank" href="https://www.carolinehwillis.com">Caroline Willis</a>
+			<br>
+		Text provided by<a target="_blank" href="https://www.haaretz.com/world-news/americas/.premium.MAGAZINE-slave-market-day-laborers-tell-of-exploitation-by-hasidim-in-brooklyn-1.5466034">HAARETZ</a>
+		</p>
+
+	</body>
+</html>
